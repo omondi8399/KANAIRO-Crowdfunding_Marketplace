@@ -22,7 +22,7 @@ const NavBar = () => {
               >
                 <Logo color="text-white" />
                 <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                  KANAIRO 
+                  Company
                   </span> 
               </a>
               <ul class="flex items-center hidden space-x-8 lg:flex">
@@ -82,7 +82,7 @@ const NavBar = () => {
                           >
                             <Logo color="text-black" />
                             <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                              KANAIRO
+                              Company
                               </span> 
                           </a>
                         </div>
