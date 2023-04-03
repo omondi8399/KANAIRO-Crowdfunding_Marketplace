@@ -1,6 +1,6 @@
-// import crowdFunding from "./CrowdFunding.json"
+import crowdFunding from "./CrowdFunding.json"
 
-// //Crowd Funding Marketplace
+//Crowd Funding Marketplace
 
-// export const CrowdFundingAddress = "0xmmdmmsmfmmaaaaaasfmffmdmss"
-// export const CrowdFundingABI = crowdFunding.abi
+export const CrowdFundingAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+export const CrowdFundingABI = crowdFunding.abi
