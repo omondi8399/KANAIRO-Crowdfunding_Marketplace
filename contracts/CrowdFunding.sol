@@ -1,8 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.0;
 
 contract CrowdFunding {
-    struct Campaign {
+
+        struct Campaign {
         address owner;
         string title;
         string description;
@@ -10,12 +11,12 @@ contract CrowdFunding {
         uint256 deadline;
         uint256 amountCollected;
         address[] donators;
-        address[] donations;
+        uint256[] donations;
     }
 
-    mapping( uint256 => Campaign) public campaigns;
+        mapping( uint256 => Campaign) public campaigns;
 
-    uint256 public numberOfCampaigns = 0;
+        uint256 public numberOfCampaigns = 0;
 
     function createCampaign( 
         address _owner,
@@ -56,7 +57,7 @@ contract CrowdFunding {
     }
 
     function getDonators(uint256 _id) view public returns (address[] memory, uint256[] memory) {
-        return (campaigns[_id].donators, campaigns[].donations);
+        return (campaigns[_id].donators, campaigns[_id].donations);
     }
 
     function getCampaign() public view returns (Campaign[] memory) {
@@ -70,4 +71,5 @@ contract CrowdFunding {
 
         return allCampaigns;
     }
+
 }
